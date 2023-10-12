@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Add new task</title>
+
+    <link href="../../../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../../node_modules/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-10 card shadow mx-auto mt-3">
+                <div class="card-header text-center bg-dark text-light mt-2">
+                    <h3>Ajout d'une tache</h3>
+                </div>
+
+                <div class="card-content mt-3">
+
+                    <div id="successMsg" class="alert alert-success" hidden> tache ajouter avec succès</div>
+
+                    <form id="newTaskForm">
+                        <div class="mb-3">
+                            <label for="label" class="form-label">Label</label>
+                            <input type="text" class="form-control" name="label" id="label" placeholder="Votre Todo">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="Description" class="form-label">Description</label>
+                            <input type="text" class="form-control" name="description" id="description"
+                                placeholder="Description">
+                        </div>
+
+                        <div class="d-grid gap-2 col-6 mx-auto">
+                            <button type="submit" class="btn btn-dark">Ajouter</button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+<script src="../../controllers/form-task/form-task.js"></script>
+
+
+</html>
